@@ -131,7 +131,7 @@ function figure1_WindowKeyPressFcn(hObject, eventdata, handles)
 %	Modifier: name(s) of the modifier key(s) (i.e., control, shift) pressed
 % handles    structure with handles and user data (see GUIDATA)
 key_input = eventdata.Key;
-if length(key_input)>1 %如果不是字母或数字键，（空格，回车，ctrl，shift等），结束这个函数；
+if length(key_input)>1 %濡傛灉涓嶆槸瀛楁瘝鎴栨暟瀛楅敭锛岋紙绌烘牸锛屽洖杞︼紝ctrl锛宻hift绛夛級锛岀粨鏉熻繖涓嚱鏁帮紱
     return;
 end
 
@@ -223,5 +223,5 @@ for i = 1:size(behaviorTime,2)
 end
 assignin('base','behaviorDur',behaviorDur);
 assignin('base','behaviorTime',behaviorTime);
-
+set(handles.pushbutton_start,'string','Start','BackgroundColor',[0.94 0.94 0.94]);
     
